@@ -27,4 +27,4 @@ Limitbot for F99
 1. Cấu hình ví và private key tại .env
 2. Cấu hình khác tại config.json.
 ## Notes
-1. M
+1. Mỗi instance chỉ chạy long hoặc short.
