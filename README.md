@@ -34,6 +34,6 @@ Limitbot for F99
       5. limit: giá vào lệnh
       6. takeProfit: giá chốt lời
       7. amountIn: số lượng mua/bán, tính theo token đầu vào
-      8. amountOut: số lượng chốt lời/cắt lỗ, luôn nhỏ hơn 1, sẽ nhân với balance hiện có.
+      8. amountOut: số lượng chốt lời/cắt lỗ, nhận giá trị từ 0.01-1 tương ứng với 1%-100%, sẽ nhân với balance hiện có.
 ## Notes
 1. Mỗi instance chỉ chạy long hoặc short.
