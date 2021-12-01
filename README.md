@@ -13,8 +13,8 @@ Limitbot for F99
 - Kiểm tra allowance nếu thiếu sẽ tự động approve (sẽ mất phí gas)
 - Tự approve đến khi nào allowance đủ
 4. Swapping
-- Đối với lệnh long nếu gía nhỏ hơn hoặc bằng giá limit -> mua (tokenIn -> tokenOut)
-- Đối với lệnh short nếu giá lớn hơn hoặc bằng giá limit -> bán (tokenOut -> tokenOut)
+- Đối với lệnh long nếu giá <= giá limit -> mua (tokenIn -> tokenOut)
+- Đối với lệnh short nếu giá >= giá limit -> bán (tokenOut -> tokenOut)
 - Số lượng mua và bán luôn là giá trị amountIn = số lượng token sẽ giao dịch
 - Nếu mua/bán thành công sẽ chuyển qua bước tiếp, nếu không -> thoát
 5. Take profit & stop loss
@@ -26,3 +26,5 @@ Limitbot for F99
 ## Configurations
 1. Cấu hình ví và private key tại .env
 2. Cấu hình khác tại config.json.
+## Notes
+1. M
