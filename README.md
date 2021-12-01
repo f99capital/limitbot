@@ -26,5 +26,14 @@ Limitbot for F99
 ## Configurations
 1. Cấu hình ví và private key tại .env
 2. Cấu hình khác tại config.json.
+3. Các tham số cấu hình:
+      1. tokenIn: địa chỉ của token dùng để mua
+      2. tokenOut: địa chỉ token muốn mua
+      3. positionType: loại lệnh canh long hoặc short
+      4. stopLoss: giá cắt lỗ
+      5. limit: giá vào lệnh
+      6. takeProfit: giá chốt lời
+      7. amountIn: số lượng mua/bán, tính theo token đầu vào
+      8. amountOut: số lượng chốt lời/cắt lỗ, luôn nhỏ hơn 1, sẽ nhân với balance hiện có đ
 ## Notes
 1. Mỗi instance chỉ chạy long hoặc short.
