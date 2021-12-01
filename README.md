@@ -21,4 +21,4 @@ Limitbot for F99
 - amountOut phải luôn <= 1 do không thể bán được số lượng nhiều hơn số dư
 ## Configurations
 1. Cấu hình ví và private key tại .env
-2. C
+2. Cấu hình khác tại config.json.
