@@ -4,11 +4,14 @@ Limitbot for F99
 1. Account preparation  
 - Thực hiện các kết nối đến ví & mạng lưới. 
 - Lấy các thông số cơ bản về các cặp tiền đã cấu hình
+- Lỗi làm lại đến khi pass
 2. Balance checking
 - Kiểm tra số dư của tokenIn đối với lệnh long
 - Kiểm tra số dư của tokenOut đối với lệnh short
+- Thiếu chờ đến khi đủ.
 3. Allowance checking
 - Kiểm tra allowance nếu thiếu sẽ tự động approve (sẽ mất phí gas)
+- Tự approve đến khi nào allowance đủ
 4. Swapping
 - Đối với lệnh long nếu gía nhỏ hơn hoặc bằng giá limit -> mua (tokenIn -> tokenOut)
 - Đối với lệnh short nếu giá lớn hơn hoặc bằng giá limit -> bán (tokenOut -> tokenOut)
@@ -19,6 +22,7 @@ Limitbot for F99
 - Đối với lệnh short, nếu giá >= stoploss hoặc giá <= takeprofit -> bán số tokenIn ra tokenOut.
 - Số lượng mua/bán = số dư token hiện có * cấu hình amountOut
 - amountOut phải luôn <= 1 do không thể bán được số lượng nhiều hơn số dư
+- Kết thúc chương trình -> thoát
 ## Configurations
 1. Cấu hình ví và private key tại .env
 2. Cấu hình khác tại config.json.
